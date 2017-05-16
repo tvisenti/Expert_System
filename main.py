@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-import sys, re, numpy
+import sys, re
 from initText import *
 from operand import *
 
@@ -13,8 +13,9 @@ def main():
     if (len(sys.argv) == 2):
         file_object = createText(sys.argv[1])
         lst = createList(file_object)
-        arrayInt = numpy.zeros(26)
+        arrayInt = [0] * 26
         arrayInt = fillArrayQuery(lst[3], arrayInt)
+        handlerArg(lst, arrayInt)
         print (lst)
         print (arrayInt)
     elif (len(sys.argv) > 2):

@@ -16,10 +16,10 @@ def createList(arg):
         else:
             if (elem.find('<') != -1):
                 lstLeft.append(elem[:elem.find('<')])
-                lstMiddle.append(elem[elem.find('<'):elem.find('>') + 1])
+                lstMiddle.append(1)
             else:
                 lstLeft.append(elem[:elem.find('=')])
-                lstMiddle.append(elem[elem.find('='):elem.find('>') + 1])
+                lstMiddle.append(0)
             lstRight.append(elem[elem.find('>') + 1:])
     return [lstLeft, lstMiddle, lstRight, lstFact, lstQuerry]
 
