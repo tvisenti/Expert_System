@@ -1,7 +1,8 @@
-#!/usr/bin/python3
+#!/usr/bin/python
 
 import sys, re, numpy
 from initText import *
+from operand import *
 
 def fillArrayQuery(query, arrayInt):
     for alpha in query[0]:

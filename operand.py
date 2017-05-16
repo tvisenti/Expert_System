@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/python
 
 def andOpe(x, y):
     if (x == 1 and y == 1):
