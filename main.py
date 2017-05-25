@@ -2,12 +2,7 @@
 
 import sys, re
 from initText import *
-from operand import *
-
-def fillArrayQuery(query, arrayInt):
-    for alpha in query[0]:
-        arrayInt[ord(alpha) - 65] = 1
-    return arrayInt
+from solve import *
 
 def main():
     if (len(sys.argv) == 2):
@@ -16,8 +11,8 @@ def main():
         arrayInt = [0] * 26
         arrayInt = fillArrayQuery(lst[3], arrayInt)
         handlerArg(lst, arrayInt)
-        print (lst)
-        print (arrayInt)
+        displaySolution(lst[4], arrayInt)
+
     elif (len(sys.argv) > 2):
         print('Too few arguments')
     else:

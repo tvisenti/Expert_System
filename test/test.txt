@@ -1,0 +1,9 @@
+# HELLO
+
+A => D ^ E
+D + !E => B
+!D + E => C
+
+=A
+
+?ABCDE
